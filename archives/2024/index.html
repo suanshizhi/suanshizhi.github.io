@@ -10,10 +10,12 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta property="og:type" content="website">
+  <meta name="description" content="此处乃殿内！">
+<meta property="og:type" content="website">
 <meta property="og:title" content="古法酱鸦">
 <meta property="og:url" content="https://suanshizhi.github.io/archives/2024/index.html">
 <meta property="og:site_name" content="古法酱鸦">
+<meta property="og:description" content="此处乃殿内！">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="古法酱鸦">
 <meta name="twitter:card" content="summary">
@@ -67,6 +69,8 @@
 		<hgroup>
 			<h1 class="header-author"><a href="/">古法酱鸦</a></h1>
 		</hgroup>
+		
+		<p class="header-subtitle">和她安全的避风港</p>
 		
 
 		<nav class="header-menu">
@@ -144,6 +148,8 @@
 			<hgroup>
 			  <h1 class="header-author js-header-author">古法酱鸦</h1>
 			</hgroup>
+			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>和她安全的避风港<i class="icon icon-quo-right"></i></p>
 			
 			
 			
@@ -305,6 +311,23 @@
 
 
 <!--  -->
+
+<script>
+  /* 标签页标题切换 */
+  var originTitle = document.title;
+  var titleTime;
+  document.addEventListener("visibilitychange", function () {
+    if (document.hidden) {
+      document.title = "右侧！敌袭！ " + originTitle;
+      clearTimeout(titleTime);
+    } else {
+      document.title = "左侧！敌袭！ " + originTitle;
+      titleTime = setTimeout(function () {
+        document.title = originTitle;
+      }, 2000);
+    }
+  });
+</script>
 
 
     
