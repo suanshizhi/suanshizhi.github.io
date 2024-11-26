@@ -78,9 +78,9 @@
 			
 				<li><a href="/tags/%E8%80%83%E6%8D%AE/" target="_blank">考据</a></li>
 			
-				<li><a href="/tags/The%20Starry%20Night/" target="_blank">The Starry Night</a></li>
+				<li><a href="/tags/%E3%82%B9%E3%83%80%E3%83%AA%E3%83%8A%E3%82%A4%E3%83%88/" target="_blank">スダリナイト</a></li>
 			
-				<li><a href="/tags/D%20&%20A/" target="_blank">D &amp; A</a></li>
+				<li><a href="/tags/%E3%82%B9%E3%83%80%E3%83%AA%E3%83%8A%E3%82%A4%E3%83%88/" target="_blank">DETECTIVE&amp;ASSISTANT</a></li>
 			
 				<li><a href="/archives" target="_blank">所有文章</a></li>
 			
@@ -88,6 +88,8 @@
 		</nav>
 		<nav class="header-smart-menu">
 			
+				
+					<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">搜索</a>
 				
 			
 				
@@ -176,9 +178,9 @@
 		        
 					<li style="width: 20%"><a href="/tags/%E8%80%83%E6%8D%AE/">考据</a></li>
 		        
-					<li style="width: 20%"><a href="/tags/The%20Starry%20Night/">The Starry Night</a></li>
+					<li style="width: 20%"><a href="/tags/%E3%82%B9%E3%83%80%E3%83%AA%E3%83%8A%E3%82%A4%E3%83%88/">スダリナイト</a></li>
 		        
-					<li style="width: 20%"><a href="/tags/D%20&%20A/">D &amp; A</a></li>
+					<li style="width: 20%"><a href="/tags/%E3%82%B9%E3%83%80%E3%83%AA%E3%83%8A%E3%82%A4%E3%83%88/">DETECTIVE&amp;ASSISTANT</a></li>
 		        
 					<li style="width: 20%"><a href="/archives">所有文章</a></li>
 		        
@@ -420,7 +422,7 @@
 		open_in_new: true,
 		toc_hide_index: true,
 		root: "/",
-		innerArchive: false,
+		innerArchive: true,
 		showTags: true
 	}
 </script>
@@ -455,6 +457,8 @@
     
     
       
+      
+      
     
       
     
@@ -468,16 +472,85 @@
     
     
       
-        
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">搜索</a></li>
       
         
       
-      <li style="width: 100%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">裂缝</a></li>
+        
+      
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">裂缝</a></li>
       
         
     </ul>
   </div>
   <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all" q-show="innerArchive">
+        <div class="search-wrap">
+          <input class="search-ipt" q-model="search" type="text" placeholder="find something…">
+          <i class="icon-search icon" q-show="search|isEmptyStr"></i>
+          <i class="icon-close icon" q-show="search|isNotEmptyStr" q-on="click:clearChose(e)"></i>
+        </div>
+        <div class="widget tagcloud search-tag">
+          <p class="search-tag-wording">tag:</p>
+          <label class="search-switch">
+            <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
+          </label>
+          <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">工具</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">考据</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">スダリナイト</a>
+              </li>
+            
+            <div class="clearfix"></div>
+          </ul>
+        </div>
+        <ul class="search-ul">
+          <p q-show="jsonFail" style="padding: 20px; font-size: 12px;">
+            缺失模块。<br/>1、请确保node版本大于6.2<br/>2、在博客根目录（注意不是yilia-plus根目录）执行以下命令：<br/> npm i hexo-generator-json-content --save<br/><br/>
+            3、在根目录_config.yml里添加配置：
+<pre style="font-size: 12px;" q-show="jsonFail">
+  jsonContent:
+    meta: false
+    pages: false
+    posts:
+      title: true
+      date: true
+      path: true
+      text: false
+      raw: false
+      content: false
+      slug: false
+      updated: false
+      comments: false
+      link: false
+      permalink: false
+      excerpt: false
+      categories: false
+      tags: true
+</pre>
+          </p>
+          <li class="search-li" q-repeat="items" q-show="isShow">
+            <a q-attr="href:path|urlformat" class="search-title"><i class="icon-quo-left icon"></i><span q-text="title"></span></a>
+            <p class="search-time">
+              <i class="icon-calendar icon"></i>
+              <span q-text="date|dateformat"></span>
+            </p>
+            <p class="search-tag">
+              <i class="icon-price-tags icon"></i>
+              <span q-repeat="tags" q-on="click:choseTag(e, name)" q-text="name|tagformat"></span>
+            </p>
+          </li>
+        </ul>
+    	</section>
     
 
     
