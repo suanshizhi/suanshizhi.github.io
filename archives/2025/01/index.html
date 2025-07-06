@@ -30,7 +30,7 @@
   <style type="text/css">
     
     #container.show {
-      background: linear-gradient(200deg,#a0cfe4,#e8c37e);
+      background: linear-gradient(200deg,#C3C08B,#B9AC80);
     }
   </style>
   
@@ -45,6 +45,9 @@
 
 
   
+    <script src="/lib/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/green/pace-theme-minimal.css" rel="stylesheet">
+  
 
 </head>
 
@@ -55,7 +58,7 @@
       
 
 
-<div class="overlay" style="background: #4d4d4d;"></div>
+<div class="overlay" style="background: #71CFC5;background: url('/img/back.jpg') no-repeat ;"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -73,24 +76,24 @@
 			
 				<li><a href="/" target="_blank">主页</a></li>
 			
-				<li><a href="https://zhousiwei.gitee.io/ibooks/" target="_blank">技术笔记</a></li>
+				<li><a href="/tags/%E8%80%83%E6%8D%AE/" target="_blank">考据</a></li>
 			
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" target="_blank">随笔</a></li>
+				<li><a href="/tags/%E3%82%B9%E3%83%80%E3%83%AA%E3%83%8A%E3%82%A4%E3%83%88/" target="_blank">スダリナイト</a></li>
+			
+				<li><a href="/archives" target="_blank">所有文章</a></li>
 			
 			</ul>
 		</nav>
 		<nav class="header-smart-menu">
 			
 				
-					<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">所有文章</a>
+					<a q-on="click: openSlider(e, 'innerArchive')" href="javascript:void(0)">搜索</a>
 				
 			
 				
-					<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-				
 			
 				
-					<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
+					<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">裂缝</a>
 				
 			
 		</nav>
@@ -98,23 +101,13 @@
 			<div class="social">
 				
 					
-						<a class="github" href="#" 
-												title="GitHub" target="_blank"><i class="icon-github"></i></a>
+						<a class="weibo" href="https://weibo.com/u/6515092278" 
+												title="微博" target="_blank"><i class="icon-weibo"></i></a>
 					
 				
 					
-						<a class="github" href="#" 
-												title="GitHub" target="_blank"><i class="icon-github"></i></a>
-					
-				
-					
-						<a class="gitee" href="#" 
-												title="码云" target="_blank"><i class="icon-gitee"></i></a>
-					
-				
-					
-						<a class="jianshu" href="#" 
-												title="简书" target="_blank"><i class="icon-jianshu"></i></a>
+						<a class="bilibili" href="https://space.bilibili.com/65070209?spm_id_from=333.1007.0.0" 
+												title="哔哩哔哩" target="_blank"><i class="icon-bilibili"></i></a>
 					
 				
 			</div>
@@ -127,14 +120,8 @@
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
       
-      <a class="forkMe" style="position:absolute;z-index:999;top:0;right:0.5em;" 
-        href="https://github.com/JoeyBling/hexo-theme-yilia-plus" target="_blank">
-        <img src="/img/forkme.png"
-          class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
-      
-      
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+  	<div class="overlay js-overlay" style="background: #71CFC5"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -159,29 +146,21 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
 				<div class="social">
 					
 						
-						<a class="github" target="_blank" 
-							href="#" title="GitHub"><i class="icon-github"></i></a>
+						<a class="weibo" target="_blank" 
+							href="https://weibo.com/u/6515092278" title="微博"><i class="icon-weibo"></i></a>
 						
 					
 						
-						<a class="github" target="_blank" 
-							href="#" title="GitHub"><i class="icon-github"></i></a>
-						
-					
-						
-						<a class="gitee" target="_blank" 
-							href="#" title="码云"><i class="icon-gitee"></i></a>
-						
-					
-						
-						<a class="jianshu" target="_blank" 
-							href="#" title="简书"><i class="icon-jianshu"></i></a>
+						<a class="bilibili" target="_blank" 
+							href="https://space.bilibili.com/65070209?spm_id_from=333.1007.0.0" title="哔哩哔哩"><i class="icon-bilibili"></i></a>
 						
 					
 				</div>
@@ -191,11 +170,13 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="https://zhousiwei.gitee.io/ibooks/">技术笔记</a></li>
+					<li style="width: 25%"><a href="/tags/%E8%80%83%E6%8D%AE/">考据</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 25%"><a href="/tags/%E3%82%B9%E3%83%80%E3%83%AA%E3%83%8A%E3%82%A4%E3%83%88/">スダリナイト</a></li>
+		        
+					<li style="width: 25%"><a href="/archives">所有文章</a></li>
 		        
 				</ul>
 			</nav>
@@ -268,7 +249,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018-2025 <a href="https://suanshizhi.github.io/" target="_blank">古法酱鸦</a>
+    		&copy; 2024-2025 <a href="https://suanshizhi.github.io/" target="_blank">古法酱鸦</a>
     	</div>
       	<div class="footer-right">
 			
@@ -304,7 +285,7 @@
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
-		toc_hide_index: true,
+		toc_hide_index: false,
 		root: "/",
 		innerArchive: true,
 		showTags: true
@@ -323,10 +304,10 @@
   var titleTime;
   document.addEventListener("visibilitychange", function () {
     if (document.hidden) {
-      document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
+      document.title = "右侧！敌袭！| " + originTitle;
       clearTimeout(titleTime);
     } else {
-      document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
+      document.title = "左侧！敌袭！| " + originTitle;
       titleTime = setTimeout(function () {
         document.title = originTitle;
       }, 2000);
@@ -345,8 +326,6 @@
       
     
       
-      
-      
     
       
       
@@ -358,15 +337,13 @@
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">搜索</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">裂缝</a></li>
       
         
     </ul>
@@ -391,15 +368,15 @@
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">スダリナイト</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">忘却前夜</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">考据</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">スダリナイト</a>
               </li>
             
             <div class="clearfix"></div>
@@ -446,70 +423,12 @@
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="https://zhousiwei.gitee.io/ibooks/" target="_blank" 
-                class="search-title" title="记录工作和学习过程中的笔记：Java、前端开发、Hexo博客、聚合支付、Linux笔记、ElasticSearch、ELK日志分析">
-                
-                  <img src="https://zhousiwei.gitee.io/ibooks/favicon.ico">
-                
-                技术笔记
-              </a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://github.com/JoeyBling" target="_blank" 
-                class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                GitHub
-              </a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://gitee.com/zhousiwei" target="_blank" 
-                class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                码云
-              </a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://www.jianshu.com/u/02cbf31a043a" target="_blank" 
-                class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                简书
-              </a>
-            </li>
-          
-            <li class="search-li">
-              <a href="https://blog.csdn.net/qq_30930805" target="_blank" 
-                class="search-title" >
-                
-                  <i class="icon-link icon"></i>
-                
-                CSDN
-              </a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
         
           
-  	  		<div class="aboutme-wrap" id="aboutme">主要涉及技术：<br>Java后端开发、聚合支付、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:2434387555<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="aboutme">Master,ぱ?тる獹<br><br>With flooded circuits I'm torn into bits<br>Take me from the wreckage now</div>
   	  	
     	</section>
     
@@ -596,6 +515,56 @@
   
   <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="/plugins/ribbon.js/ribbon.min.js"></script> -->
   
+  
+    <script type="text/javascript" src="/plugins/live2d-widget.js/L2Dwidget.min.js"></script>
+<script type="text/javascript">
+  /**
+   * 完整配置请参考：https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init
+   */
+  var pluginModelPath = "assets/", // 模型的文件路径，无需更改
+    pluginRootPath = "/live2d_models/"; // 插件的路径，无需更改
+  //特定的模型json文件名称
+  var modelPathJson = {
+    "epsilon2_1": "Epsilon2.1",
+    "gf": "Gantzert_Felixander",
+    "haru/01": "haru01",
+    "haru/02": "haru02",
+    "nietzsche": "nietzche"
+  }
+
+  
+    var modelName = "hijiki";
+  
+
+  var modelJsonPath = "";
+  if (modelPathJson[modelName]) {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelPathJson[modelName] +
+      ".model.json";
+  } else {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelName + ".model.json";
+  }
+  L2Dwidget.init({
+    model: {
+      jsonPath: modelJsonPath
+    },
+    display: {
+       position: "right", 
+       width: 70, 
+       height: 150, 
+       hOffset: 50, 
+       vOffset: -5 
+    },
+    mobile: {
+      
+       scale: 0.5 
+    },
+    react: {
+       opacity: 1 
+    }
+  })
+
+</script>
+
   
   
 </body>
