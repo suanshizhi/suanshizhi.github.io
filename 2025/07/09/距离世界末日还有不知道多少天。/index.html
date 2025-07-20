@@ -100,6 +100,8 @@
 				
 			
 				
+					<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
+				
 			
 				
 					<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">裂缝</a>
@@ -117,11 +119,6 @@
 					
 						<a class="bilibili" href="https://space.bilibili.com/65070209?spm_id_from=333.1007.0.0" 
 												title="哔哩哔哩" ><i class="icon-bilibili"></i></a>
-					
-				
-					
-						<a class="qq" href="https://user.qzone.qq.com/1319426997/main" 
-												title="QQ" ><i class="icon-qq"></i></a>
 					
 				
 			</div>
@@ -177,11 +174,6 @@
 						
 						<a class="bilibili" target="_blank" 
 							href="https://space.bilibili.com/65070209?spm_id_from=333.1007.0.0" title="哔哩哔哩"><i class="icon-bilibili"></i></a>
-						
-					
-						
-						<a class="qq" target="_blank" 
-							href="https://user.qzone.qq.com/1319426997/main" title="QQ"><i class="icon-qq"></i></a>
 						
 					
 				</div>
@@ -492,6 +484,8 @@
       
     
       
+      
+      
     
       
       
@@ -503,13 +497,15 @@
     
     
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">搜索</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">搜索</a></li>
       
         
       
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
+      
         
       
-      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">裂缝</a></li>
+      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">裂缝</a></li>
       
         
     </ul>
@@ -592,6 +588,24 @@
     	</section>
     
 
+    
+    	<section class="tools-section tools-section-friends" q-show="friends">
+  		
+        <ul class="search-ul">
+          
+            <li class="search-li">
+              <a href="https://weibo.com/u/5368366873" target="_blank" 
+                class="search-title" >
+                
+                  <i class="icon-link icon"></i>
+                
+                微博
+              </a>
+            </li>
+          
+        </ul>
+  		
+    	</section>
     
 
     
