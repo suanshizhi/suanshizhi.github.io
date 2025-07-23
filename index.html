@@ -53,7 +53,37 @@
     <link href="//cdn.bootcss.com/pace/1.0.2/themes/green/pace-theme-minimal.css" rel="stylesheet">
   
 
-</head>
+<style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style></head>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -234,7 +264,8 @@
   <div class="article-entry" itemprop="articleBody">
     
     <p>兴趣使然的文章堆放地，建站初衷是别人有的我也要有。</p>
-<p>在大量二次元中发现了少量史向考据。说是考据但有50%的概率只是单纯的整合存档意味。公开羞耻很严重不想被问哪篇是我写的。</p>
+<p>在大量二次元中发现了少量史向考据。说是考据但有50%的概率只是单纯的整合存档意味。</p>
+<p>公开羞耻很严重不想被问哪篇是我写的。不会删除，不希望以任何形式复制存档。</p>
 <p>挂梯会相对流畅。tag检索请点击【导航栏】-【搜索】，部分文章因密码设置无法在搜索结果中显示。<br>
 <span style="display:block;text-align:center;"><br>
 <img src="/images/ll.png" width="100%" height="100%"><br>
@@ -360,6 +391,111 @@
 			 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">存档</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+    
+
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-角色设定" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+  
+  
+    <h1 itemprop="name">
+	
+	  <a class="article-title" href="/2025/07/23/%E8%A7%92%E8%89%B2%E8%AE%BE%E5%AE%9A/">角色设定</a>
+	
+    </h1>
+  
+
+
+  
+  
+<a href="/2025/07/23/%E8%A7%92%E8%89%B2%E8%AE%BE%E5%AE%9A/" class="archive-article-date">
+        <time datetime="2025-07-22T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-07-23</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">9字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">1分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    ai翻译 | 弦楽器、打楽器とチェレスタのための殺人 | 第3&4回
+    
+    <a class="article-more-a" href="/2025/07/23/%E8%A7%92%E8%89%B2%E8%AE%BE%E5%AE%9A/#more">展开全文 >></a>
+    
+    
+
+    
+
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">スダリナイト</a>
         		</li>
       		
 		</ul>
@@ -999,111 +1135,6 @@
 <p>记得买最贵的，这是四十野唯一的嘱托。
     
     <a class="article-more-a" href="/2025/07/06/%E8%B7%9D%E7%A6%BB%E4%B8%96%E7%95%8C%E6%9C%AB%E6%97%A5%E8%BF%98%E6%9C%89534%E5%A4%A9%E3%80%82/#more">展开全文 >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">スダリナイト</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-    
-
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-距离世界末日还有513天。" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-  
-  
-    <h1 itemprop="name">
-	
-	  <a class="article-title" href="/2025/07/06/%E8%B7%9D%E7%A6%BB%E4%B8%96%E7%95%8C%E6%9C%AB%E6%97%A5%E8%BF%98%E6%9C%89513%E5%A4%A9%E3%80%82/">距离世界末日还有513天。</a>
-	
-    </h1>
-  
-
-
-  
-  
-<a href="/2025/07/06/%E8%B7%9D%E7%A6%BB%E4%B8%96%E7%95%8C%E6%9C%AB%E6%97%A5%E8%BF%98%E6%9C%89513%E5%A4%A9%E3%80%82/" class="archive-article-date">
-        <time datetime="2025-07-05T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2025-07-06</time>
-</a>
-
-  
-  
-    
-<div style="margin-top:10px;">
-  <span class="post-time">
-    <span class="post-meta-item-icon">
-      <!-- fonts.scss -->
-      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
-      <i class="icon-statistics"></i>
-      <span class="post-meta-item-text"> 字数统计:</span>
-      <span class="post-count">3.9k字</span>
-    </span>
-  </span>
-
-  <span class="post-time">
-    &nbsp; | &nbsp;
-    <span class="post-meta-item-icon">
-      <i class="icon-book icon"></i>
-      <span class="post-meta-item-text"> 阅读时长≈</span>
-      <span class="post-count">12分</span>
-    </span>
-  </span>
-</div>
-
-
-  
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    <p>七月中临近假期的时候，周围人各有安排：丸尾报名了夏令营，草葉要回乡下老家，小春被家里人拉着去青森旅游。四十野放学回来的时候和小夜子陈述了如上事实，小夜子随口问道：要不…我也去哪里走走，你要一起吗？
-    
-    <a class="article-more-a" href="/2025/07/06/%E8%B7%9D%E7%A6%BB%E4%B8%96%E7%95%8C%E6%9C%AB%E6%97%A5%E8%BF%98%E6%9C%89513%E5%A4%A9%E3%80%82/#more">展开全文 >></a>
     
     
 
